@@ -1,14 +1,14 @@
 package pl.testuj;
 
-public class MobileContact extends PhoneContact {
+public class WorkContact extends PhoneContact {
 
-    public MobileContact(int id, String name, String surname, String number) {
+    public WorkContact(int id, String name, String surname, String number) {
         super(id, name, surname, number);
     }
 
     @Override
     public void print() {
-        System.out.println("Kontakt " + ContactType.MOBI.getFullType());
+        System.out.println("Kontakt " + ContactType.WORK.getFullType());
         super.print();
     }
 

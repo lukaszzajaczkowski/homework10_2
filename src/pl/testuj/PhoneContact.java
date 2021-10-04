@@ -29,11 +29,12 @@ public abstract class PhoneContact implements PrintableContact {
 
     @Override
     public void print() {
-        System.out.format("\n%d | %s | %s | %s\n", id, name, surname, number);
+        System.out.format("%d | %s | %s | %s \n \n", id, name, surname, number);
     }
 
     @Override
     public void send() {
+        System.out.println("Przesyłam wizytówkę " + name + " " + surname + ": " + number);
 
     }
 
