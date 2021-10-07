@@ -1,6 +1,6 @@
 package pl.testuj;
 
-
+import java.util.*;
 /*
 
 
@@ -13,6 +13,8 @@ i na każdym kontakcie wywołać metodę print()
 
 
  */
+
+
 
 public class Main {
 
@@ -36,7 +38,13 @@ public class Main {
             phoneContacts[i].print();
         }
 
+        System.out.println("Zadanie domowe z webinar 11:");
+
+        List<PhoneContact> list = Arrays.asList(phoneContacts);
+
+        for (int i = 0; i < phoneContacts.length; i++) {
+            phoneContacts[i].send();
+        }
 
     }
-
 }
